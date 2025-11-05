@@ -80,7 +80,7 @@ export const Loader: React.FC<LoaderProps> = ({
           ref={progressRef}
         ></div>
         <span
-          className=" font-display absolute -left-[10vw] top-1/2 -translate-y-1/2 z-40 whitespace-nowrap text-black text-xl leading-[23px]"
+          className=" font-display absolute -left-[10vw] md:-left-[5vw] top-1/2 -translate-y-1/2 z-40 whitespace-nowrap text-black text-xl leading-[23px]"
           ref={progressNumberRef}
         >
           0

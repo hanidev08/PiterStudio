@@ -26,7 +26,7 @@ const Gallery: FC<GalleryProps> = ({ slice }) => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className=" pt-[150px] md:pt-[204px]"
+      className=" pt-[150px] md:pt-[204px] overflow-hidden"
     >
       <LoaderWrapper />
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-5 gap-y-[70px] md:gap-y-[100px]">

@@ -13,7 +13,7 @@ export const ImageDisplay = async ({ id }: ImageDisplayProps) => {
   return (
     <div className="col-span-1 md:col-span-3">
       <div className="flex flex-col gap-y-[15px] md:gap-y-2.5 ">
-        <div className=" relative aspect-7/5 w-screen max-w-[400px] md:w-[23.5vw] md:max-w-[352px]">
+        <div className=" relative aspect-7/5 w-screen max-w-3xl md:w-[23.5vw] md:max-w-[352px]">
           <PrismicNextImage
             field={image.data.image}
             fill

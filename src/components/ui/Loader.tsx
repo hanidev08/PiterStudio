@@ -54,17 +54,17 @@ export const Loader: React.FC<LoaderProps> = ({
         .to(progressNumberRef.current, {
           y: 24,
           autoAlpha: 0,
-        });
-      // .to(
-      //   containerRef.current,
-      //   {
-      //     y: "-100%",
-      //     duration: 0.8,
-      //     ease: "power2.inOut",
-      //     delay: 0.3,
-      //   },
-      //   "-=0.2"
-      // );
+        })
+        .to(
+          containerRef.current,
+          {
+            y: "-100%",
+            duration: 0.8,
+            ease: "power2.inOut",
+            delay: 0.3,
+          },
+          "-=0.2"
+        );
     },
     { scope: containerRef }
   );

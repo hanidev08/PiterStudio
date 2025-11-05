@@ -28,8 +28,8 @@ const Gallery: FC<GalleryProps> = ({ slice }) => {
       data-slice-variation={slice.variation}
       className=" pt-[150px] md:pt-[204px]"
     >
-      <LoaderWrapper />
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-x-5 gap-y-[70px] md:gap-y-[100px]">
+      {/* <LoaderWrapper /> */}
+      <div className="grid grid-cols-4 md:grid-cols-12 md:gap-x-5 gap-y-[70px] md:gap-y-[100px]">
         {slice.primary.images.map((item) => {
           if (isFilled.contentRelationship(item.image)) {
             return <ImageDisplay key={item.image.id} id={item.image.id} />;

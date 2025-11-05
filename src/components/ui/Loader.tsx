@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { cn } from "../../../lib/utils";
 import React, { useRef } from "react";
- import "./style.scss";
+import "./style.scss";
 
 interface LoaderProps {
   className?: string;
@@ -54,42 +54,37 @@ export const Loader: React.FC<LoaderProps> = ({
         .to(progressNumberRef.current, {
           y: 24,
           autoAlpha: 0,
-        })
-        .to(
-          containerRef.current,
-          {
-            y: "-100%",
-            duration: 0.8,
-            ease: "power2.inOut",
-            delay: 0.3,
-          },
-          "-=0.2"
-        );
+        });
+      // .to(
+      //   containerRef.current,
+      //   {
+      //     y: "-100%",
+      //     duration: 0.8,
+      //     ease: "power2.inOut",
+      //     delay: 0.3,
+      //   },
+      //   "-=0.2"
+      // );
     },
     { scope: containerRef }
   );
   return (
     <div
       ref={containerRef}
-      className={cn(
-        " fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden",
-        className
-      )}
+      className={cn(" fixed inset-0 z-50 overflow-hidden", className)}
       style={{ backgroundColor }}
     >
-      <div className=" relative h-full w-full inset-0 overflow-hidden">
-        <div className=" absolute bottom-0 left-0 h-[5vh] w-full z-30">
-          <div
-            className=" w-full h-full bg-white scale-x-0 origin-left"
-            ref={progressRef}
-          ></div>
-          <span
-            className=" font-display absolute -left-[5vw] top-1/2 -translate-y-1/2 z-40 whitespace-nowrap text-black text-xl leading-[23px]"
-            ref={progressNumberRef}
-          >
-            0
-          </span>
-        </div>
+      <div className=" absolute bottom-0 left-0 h-[5vh] w-full z-30">
+        <div
+          className="w-full h-full bg-white scale-x-0 origin-left"
+          ref={progressRef}
+        ></div>
+        <span
+          className=" font-display absolute -left-[10vw] top-1/2 -translate-y-1/2 z-40 whitespace-nowrap text-black text-xl leading-[23px]"
+          ref={progressNumberRef}
+        >
+          0
+        </span>
       </div>
     </div>
   );

@@ -17,8 +17,8 @@
 							[
 								"image",
 								{
-									"__TYPE__": "LinkContent",
 									"key": "8ffb42d2-bd28-4343-a785-8cdfdaec2157",
+									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "DocumentLink",
 										"id": "mock_document_id"

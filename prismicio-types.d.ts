@@ -163,6 +163,94 @@ interface ImageDocumentData {
   image: prismic.ImageField<never>;
 
   /**
+   * Body field in *Image*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Location field in *Image*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.location
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  location: prismic.RichTextField;
+
+  /**
+   * ImageOne field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imageone
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imageone: prismic.ImageField<never>;
+
+  /**
+   * ImageTow field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imagetow
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imagetow: prismic.ImageField<never>;
+
+  /**
+   * ImageThree field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imagethree
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imagethree: prismic.ImageField<never>;
+
+  /**
+   * ImageFour field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imagefour
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imagefour: prismic.ImageField<never>;
+
+  /**
+   * ImageFive field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imagefive
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imagefive: prismic.ImageField<never>;
+
+  /**
+   * ImageSix field in *Image*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.imagesix
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  imagesix: prismic.ImageField<never>;
+
+  /**
    * Slice Zone field in *Image*
    *
    * - **Field Type**: Slice Zone

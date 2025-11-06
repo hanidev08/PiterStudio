@@ -29,6 +29,72 @@
           "thumbnails": []
         }
       },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Body",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em"
+        }
+      },
+      "location": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Location",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading2"
+        }
+      },
+      "imageone": {
+        "type": "Image",
+        "config": {
+          "label": "ImageOne",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagetow": {
+        "type": "Image",
+        "config": {
+          "label": "ImageTow",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagethree": {
+        "type": "Image",
+        "config": {
+          "label": "ImageThree",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagefour": {
+        "type": "Image",
+        "config": {
+          "label": "ImageFour",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagefive": {
+        "type": "Image",
+        "config": {
+          "label": "ImageFive",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagesix": {
+        "type": "Image",
+        "config": {
+          "label": "ImageSix",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

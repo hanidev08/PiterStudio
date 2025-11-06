@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { NavBar } from "@/components/NavBar";
 import localFont from "next/font/local";
+import { Loader } from "@/components/ui/Loader";
 
 const suisse = localFont({
   src: "./fonnts.com-Suisse_Intl_Medium.ttf",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${suisse.variable} antialiased`}>
+        <Loader />
         <NavBar />
         <main>{children}</main>
       </body>

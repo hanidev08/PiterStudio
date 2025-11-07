@@ -4,4 +4,5 @@ import dynamic from "next/dynamic";
 
 export const components = {
   gallery: dynamic(() => import("./Gallery")),
+  homepage: dynamic(() => import("./Homepage")),
 };

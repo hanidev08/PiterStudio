@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --breakpoint-md: 650px;
   --font-display: var(--font-suisse);
+  --font-sans: var(--font-times);
 }

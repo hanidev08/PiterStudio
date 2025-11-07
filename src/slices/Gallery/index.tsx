@@ -3,8 +3,7 @@ import { Content, isFilled } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
 import { ImageDisplay } from "./ImageDisplay";
-import { Loader } from "@/components/ui/Loader";
-
+ 
 /**
  * Props for `Gallery`.
  */
@@ -19,7 +18,7 @@ const Gallery: FC<GalleryProps> = ({ slice }) => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className=" pt-[150px] md:pt-[351px]"
+      className=" pt-[150px] md:pt-[246px]"
     >
       {/* <Loader /> */}
 

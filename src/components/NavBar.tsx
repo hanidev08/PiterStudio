@@ -65,7 +65,7 @@ const translate = {
   },
   exit: {
     y: "100%",
-    transition: { duration: 0.5 },
+    transition: { duration: 0.5,},
   },
 };
 export const NavBar = () => {
@@ -99,8 +99,23 @@ export const NavBar = () => {
       ) : (
         <>
           <div className="flex md:grid md:grid-cols-12 justify-between text-xl leading-[23px]">
-            <Link href="/" className=" uppercase font-display md:col-span-3 ">
-              PiterStudio
+            <Link
+              href="/"
+              className=" uppercase font-display md:col-span-3  relative flex items-center justify-center"
+            >
+              <motion.p
+                variants={opacity}
+                animate={!isActive ? "open" : "closed"}
+              >
+                PiterStudio
+              </motion.p>
+              <motion.p
+                variants={opacity}
+                animate={isActive ? "open" : "closed"}
+                className=" absolute opacity-0 text-white z-50"
+              >
+                PiterStudio
+              </motion.p>
             </Link>
             <div
               onClick={() => {
